@@ -1,0 +1,127 @@
+{
+  "_args": [
+    [
+      "@grpc/grpc-js@^0.5.2",
+      "/home/fikayomi/Documents/Merchant-Api/node_modules/google-gax"
+    ]
+  ],
+  "_from": "@grpc/grpc-js@>=0.5.2 <0.6.0",
+  "_hasShrinkwrap": false,
+  "_id": "@grpc/grpc-js@0.5.4",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/@grpc/grpc-js",
+  "_nodeVersion": "12.9.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/grpc-js_0.5.4_1569001727629_0.13477059330274677"
+  },
+  "_npmUser": {
+    "email": "mlumish@google.com",
+    "name": "murgatroid99"
+  },
+  "_npmVersion": "6.10.2",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "@grpc/grpc-js",
+    "raw": "@grpc/grpc-js@^0.5.2",
+    "rawSpec": "^0.5.2",
+    "scope": "@grpc",
+    "spec": ">=0.5.2 <0.6.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/google-gax"
+  ],
+  "_resolved": "https://registry.npmjs.org/@grpc/grpc-js/-/grpc-js-0.5.4.tgz",
+  "_shasum": "20ee7880e69805cbc63a1c54a3af02cc6475c850",
+  "_shrinkwrap": null,
+  "_spec": "@grpc/grpc-js@^0.5.2",
+  "_where": "/home/fikayomi/Documents/Merchant-Api/node_modules/google-gax",
+  "author": {
+    "name": "Google Inc."
+  },
+  "contributors": [
+    {
+      "name": "Google Inc."
+    }
+  ],
+  "dependencies": {
+    "semver": "^6.2.0"
+  },
+  "description": "gRPC Library for Node - pure JS implementation",
+  "devDependencies": {
+    "@grpc/proto-loader": "^0.5.0",
+    "@types/gulp": "^4.0.6",
+    "@types/gulp-mocha": "0.0.32",
+    "@types/lodash": "^4.14.108",
+    "@types/mocha": "^5.2.6",
+    "@types/ncp": "^2.0.1",
+    "@types/node": "^12.0.2",
+    "@types/pify": "^3.0.2",
+    "@types/semver": "^6.0.1",
+    "clang-format": "^1.0.55",
+    "execa": "^2.0.3",
+    "gts": "^1.1.0",
+    "gulp": "^4.0.2",
+    "gulp-mocha": "^6.0.0",
+    "lodash": "^4.17.4",
+    "mocha-jenkins-reporter": "^0.4.1",
+    "ncp": "^2.0.0",
+    "pify": "^4.0.1",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  },
+  "directories": {},
+  "dist": {
+    "fileCount": 75,
+    "integrity": "sha512-aY4fTCz7jq7oKFmfAeZVqGzMCR5I9NLdY9E2fJ70QtGXwlJnTaN6cnbRmCk23/aKPx9UHqOtk2lyjpN6LbAaxw==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdhREACRA9TVsSAnZWagAAYo0P/jstwwMv/Gp16tOIQ1LY\ncfcje9p/zyEW1puL3x5oYidl5TKSZXqNSUtexkPod0y0ut7yUQG/hMPqzFfA\nXC6j0NsiBBMcXuw4Fz65TdVFhsNfF/YgbdMQW7qMwstFHvRnk0srDbfywSVo\nYUqbuTBsxdKIJQDP/8jRlntSh5JXjTdFJ+n8hIxlJkGxCvJxUP6zB/i+MrQ9\nf411cTvAtI+6r/X9fXGZkpNSW/z9ODQ2KGhEGO531kzei7fI/HQ9vz6VmQpd\nSzy9oI5oMY7UhNg5zBCS2k8+aCLGoIT8TwyHLUGSUKtJwWC0Za7UL3so137i\ni9aLXpaQpenGcpgcr1dfVxMcwLZCFNkIVRJ/41zjdxK8ypXs6DzQF4mtKeyW\nKMW+ocUjOIEU9vVqSJM1RNY2zDr8dKEIKDHi6YK4s0CxhgbN7TuBzBmpmo76\nXM43l8SOOhgCcHDOqMD4NgySvSz+p1Qn315DrMB1S0q+dqNiPTU9JFwI6pI5\nODwsjbvL+jAjI+ERRNcz5lHjTnTvV/t6yTN9LJwn+gLOMK7geXurEc1AEIZZ\nw/0D8sgh1msyomzgD5is9pgsl+QBQAccJb7qpbQuW3Br+7tDHhPHzHyaFUBn\nJlRFzSiGbxig2r6wvkLfJ9yf5jTc2LVU9VNwbyXn5dNCx63QPwDNh0zVaQqw\ns12M\r\n=c2dJ\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "20ee7880e69805cbc63a1c54a3af02cc6475c850",
+    "tarball": "https://registry.npmjs.org/@grpc/grpc-js/-/grpc-js-0.5.4.tgz",
+    "unpackedSize": 275742
+  },
+  "engines": {
+    "node": "^8.13.0 || >=10.10.0"
+  },
+  "homepage": "https://grpc.io/",
+  "keywords": [],
+  "license": "Apache-2.0",
+  "main": "build/src/index.js",
+  "maintainers": [
+    {
+      "name": "grpc-packages",
+      "email": "grpc-packages@google.com"
+    },
+    {
+      "name": "murgatroid99",
+      "email": "mlumish@google.com"
+    },
+    {
+      "name": "nicolasnoble",
+      "email": "nicolas@nobis-crew.org"
+    }
+  ],
+  "name": "@grpc/grpc-js",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/grpc/grpc-node/tree/master/packages/grpc-js"
+  },
+  "scripts": {
+    "build": "npm run compile",
+    "check": "gts check",
+    "clean": "gts clean",
+    "compile": "tsc -p .",
+    "fix": "gts fix",
+    "format": "clang-format -i -style=\"{Language: JavaScript, BasedOnStyle: Google, ColumnLimit: 80}\" src/*.ts test/*.ts",
+    "lint": "tslint -c node_modules/google-ts-style/tslint.json -p . -t codeFrame --type-check",
+    "posttest": "npm run check",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "test": "gulp test"
+  },
+  "types": "build/src/index.d.ts",
+  "version": "0.5.4"
+}

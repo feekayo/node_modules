@@ -1,0 +1,92 @@
+{
+  "_args": [
+    [
+      "ntp-packet-parser@^0.1.0",
+      "/home/fikayomi/Documents/Merchant-Api/node_modules/ntp-time-sync"
+    ]
+  ],
+  "_from": "ntp-packet-parser@>=0.1.0 <0.2.0",
+  "_id": "ntp-packet-parser@0.1.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/ntp-packet-parser",
+  "_nodeVersion": "8.3.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/ntp-packet-parser-0.1.0.tgz_1504167856941_0.3509871696587652"
+  },
+  "_npmUser": {
+    "email": "laurens.stoetzel@gmail.com",
+    "name": "l.stoetzel"
+  },
+  "_npmVersion": "5.3.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "ntp-packet-parser",
+    "raw": "ntp-packet-parser@^0.1.0",
+    "rawSpec": "^0.1.0",
+    "scope": null,
+    "spec": ">=0.1.0 <0.2.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/ntp-time-sync"
+  ],
+  "_resolved": "https://registry.npmjs.org/ntp-packet-parser/-/ntp-packet-parser-0.1.0.tgz",
+  "_shasum": "37f5d6b406cba76536b1cb203c591e67ae04bfba",
+  "_shrinkwrap": null,
+  "_spec": "ntp-packet-parser@^0.1.0",
+  "_where": "/home/fikayomi/Documents/Merchant-Api/node_modules/ntp-time-sync",
+  "author": {
+    "name": "Laurens Stötzel"
+  },
+  "bugs": {
+    "url": "https://github.com/buffcode/ntp-packet-parser/issues"
+  },
+  "dependencies": {},
+  "description": "A parser for NTP UDP packets",
+  "devDependencies": {
+    "babel-cli": "6",
+    "babel-preset-es2015": "6",
+    "mocha": "^3.5.0",
+    "prettier": "^1.6.1"
+  },
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-gacKmXjyp3rsJqo4QOMKPp3MHGPDf0G3aN6CQTgnIXIj9O26vLiDT2mMAWrDl5SRRsk6pikakVFG67agxH87rg==",
+    "shasum": "37f5d6b406cba76536b1cb203c591e67ae04bfba",
+    "tarball": "https://registry.npmjs.org/ntp-packet-parser/-/ntp-packet-parser-0.1.0.tgz"
+  },
+  "gitHead": "4161d716f61ac5a3881b6c40e8cf8c71fba33440",
+  "homepage": "https://github.com/buffcode/ntp-packet-parser#readme",
+  "keywords": [
+    "clock",
+    "ntp",
+    "parser",
+    "sync",
+    "udp"
+  ],
+  "license": "GPL-3.0",
+  "main": "dist/index.js",
+  "maintainers": [
+    {
+      "name": "l.stoetzel",
+      "email": "laurens.stoetzel@gmail.com"
+    }
+  ],
+  "name": "ntp-packet-parser",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buffcode/ntp-packet-parser.git"
+  },
+  "scripts": {
+    "build": "babel --presets babel-preset-es2015 --out-dir dist src && prettier --write dist/**/*.js",
+    "prepublishOnly": "yarn prettier:lint && yarn build",
+    "prettier": "prettier --write src/**/*.js test/**/*.js",
+    "prettier:lint": "prettier --list-different src/**/*.js",
+    "test": "mocha --compilers js:babel-core/register --recursive test"
+  },
+  "version": "0.1.0"
+}

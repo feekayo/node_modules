@@ -1,0 +1,98 @@
+{
+  "_from": "demux@4.0.0",
+  "_id": "demux@4.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-wgugBOMDJciL0b2+fpy2L1ysza63Q1l72rPycc/Sdra7rXrphCTQS9M/v1e1NwMXNS60iDdp5uKEIKl/CYUcKQ==",
+  "_location": "/demux",
+  "_phantomChildren": {},
+  "_requested": {
+    "escapedName": "demux",
+    "fetchSpec": "4.0.0",
+    "name": "demux",
+    "raw": "demux@4.0.0",
+    "rawSpec": "4.0.0",
+    "registry": true,
+    "saveSpec": null,
+    "type": "version"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/demux/-/demux-4.0.0.tgz",
+  "_shasum": "f0803107b3588071afeb5cc57e1cdddf354a1e80",
+  "_spec": "demux@4.0.0",
+  "_where": "/home/fikayomi/kowe-api",
+  "author": {
+    "name": "Julien Heller",
+    "url": "https://block.one/"
+  },
+  "bugs": {
+    "url": "https://github.com/EOSIO/demux-js/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "bunyan": "1.8.12",
+    "express": "4.16.4"
+  },
+  "deprecated": false,
+  "description": "Deterministic event-sourced state and side effect handling for blockchain applications",
+  "devDependencies": {
+    "@blockone/tslint-config-blockone": "^2.0.0",
+    "@types/bunyan": "^1.8.5",
+    "@types/express": "^4.16.0",
+    "@types/jest": "^23.1.4",
+    "@types/node": "^10.5.1",
+    "@types/request-promise-native": "^1.0.15",
+    "@types/supertest": "^2.0.7",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "jest": "^23.6.0",
+    "release-it": "^7.5.0",
+    "supertest": "^3.4.1",
+    "ts-jest": "^23.0.0",
+    "tslint": "^5.10.0",
+    "tslint-eslint-rules": "^5.3.1",
+    "typedoc": "^0.11.1",
+    "typescript": "^2.9.2"
+  },
+  "homepage": "https://github.com/EOSIO/demux-js#readme",
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.json"
+      }
+    },
+    "moduleFileExtensions": [
+      "js",
+      "ts",
+      "tsx"
+    ],
+    "testEnvironment": "node",
+    "testRegex": "(/src/.*(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    }
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "demux",
+  "optionalDependencies": {},
+  "readme": "# demux-js [![Build Status](https://travis-ci.org/EOSIO/demux-js.svg?branch=develop)](https://travis-ci.org/EOSIO/demux-js)\n\nDemux is a backend infrastructure pattern for sourcing blockchain events to deterministically update queryable datastores and trigger side effects. This library serves as a reference implementation of that pattern for use with Node applications.\n\n## Installation\n\n\n```bash\n# Using yarn\nyarn add demux\n\n# Using npm\nnpm install demux --save\n```\n## Overview\n\nTaking inspiration from the [Flux Architecture](https://facebook.github.io/flux/docs/in-depth-overview.html#content) pattern and [Redux](https://github.com/reduxjs/redux/), Demux was born out of the following qualifications:\n\n1. A separation of concerns between how state exists on the blockchain and how it is queried by the client front-end\n1. Client front-end not solely responsible for determining derived, reduced, and/or accumulated state\n1. Ability for blockchain events to trigger new transactions, as well as other side effects outside of the blockchain\n1. The blockchain as the single source of truth for all application state\n\n### Separated Persistence Layer\n\nStoring data in indexed state on blockchains can be useful for three reasons: decentralized consensus of computation results, usage of state from within other blockchain computations, and for retrieval of state for use in client front-ends. When building more complicated front-ends, you run into a few problems when retrieving directly from indexed blockchain state:\n\n* The query interface used to retrieve the indexed data is limited. Complex data requirements can mean you either have to make an excess number of queries and process the data on the client, or you must store additional derivative data on the blockchain itself.\n* Scaling your query load means creating more blockchain endpoint nodes, which can be very expensive.\n\nDemux solves these problems by off-loading queries to any persistence layer that you want. As blockchain events happen, your chosen persistence layer is updated by `updater` functions, which deterministically process an array of `Action` objects. The persistence layer can then be queried by your front-end through a suitable API (for example, REST or GraphQL).\n\nThis means that we can separate our concerns: for data that needs decentralized consensus of computation or access from other blockchain events, we can still store the data in indexed blockchain state, without having to worry about tailoring to front-end queries. For data required by our front-end, we can pre-process and index data in a way that makes it easy for it to be queried, in a horizontally scalable persistence layer of our choice. The end result is that both systems can serve their purpose more effectively.\n\n### Side Effects\n\nSince we have a system for acting upon specific blockchain events deterministically, we can utilize this system to manage non-deterministic events as well. These `effect` functions work almost exactly the same as `updater` functions, except they run asynchronously, are not run during replays, and modifying the deterministic datastore is off-limits. Examples include: signing and broadcasting a transaction, sending an email, and initiating a traditional fiat payment.\n\n### Single Source of Truth\n\nThere are other solutions to the above problems that involve legacy persistence layers that are their own sources of truth. By deriving all state from the blockchain, however, we gain the following benefits:\n\n* If the accumulated datastore is lost or deleted, it may be regenerated by replaying blockchain actions\n* As long as application code is open source, and the blockchain is public, all application state can be audited\n* No need to maintain multiple ways of updating state (submitting transactions is the sole way)\n\n## Data Flow\n\n<img src='https://i.imgur.com/MFfGOe3.png' height='492' alt='Demux Logo' />\n\n1. Client sends transaction to blockchain\n1. Action Watcher invokes Action Reader to check for new blocks\n1. Action Reader sees transaction in new block, parses actions\n1. Action Watcher sends actions to Action Handler\n1. Action Handler processes actions through Updaters and Effects\n1. Actions run their corresponding Updaters, updating the state of the Datastore\n1. Actions run their corresponding Effects, triggering external events\n1. Client queries API for updated data\n\n\n## Class Implementations\n\nRepository | Description\n---|---\n[EOSIO / demux-js-eos](https://github.com/EOSIO/demux-js-eos) * | Action Reader implementations for EOSIO blockchains\n[EOSIO / demux-js-postgres](https://github.com/EOSIO/demux-js-postgres) * | Action Handler implementation for Postgres databases\n[Zapata / demux-js-bitshares](https://github.com/Zapata/demux-js-bitshares) | Action Reader implementations for BitShares blockchain\n\n*\\* Officially supported by Block.one*\n\nTo get your project listed, add it here and submit a PR!\n\n\n## Usage\n\n\n\nThis library provides the following classes:\n\n* [**`AbstractActionReader`**](https://eosio.github.io/demux-js/classes/abstractactionreader.html): Abstract class used for implementing your own Action Readers\n\n* [**`AbstractActionHandler`**](https://eosio.github.io/demux-js/classes/abstractactionhandler.html): Abstract class used for implementing your own Action Handlers   \n\n* [**`BaseActionWatcher`**](https://eosio.github.io/demux-js/classes/baseactionwatcher.html): Base class that implements a ready-to-use Action Watcher\n\n* [**`ExpressActionWatcher`**](https://eosio.github.io/demux-js/classes/expressactionwatcher.html): Exposes the API methods from the BaseActionWatcher through an Express server\n\nIn order to process actions, we need the following things:\n\n- An implementation of an `AbstractActionReader`\n- An implementation of an `AbstractActionHandler`\n- At least one `HandlerVersion`, which contain `Updater` and `Effect` arrays\n\nAfter we have these things, we need to:\n\n- Instantiate the implemented `AbstractActionReader` with any needed configuration\n- Instantiate the implemented `AbstractActionHandler`, passing in the `HandlerVersion` and any other needed configuration\n- Instantiate the `BaseActionWatcher` (or a subclass), passing in the Action Handler and Action Watcher instances\n- Start indexing via the Action Watcher's `watch()` method (by either calling it directly or otherwise)\n\n\n#### Example\n\n```javascript\nconst { BaseActionWatcher, ExpressActionWatcher } = require(\"demux\")\nconst { MyActionReader } = require(\"./MyActionReader\")\nconst { MyActionHandler } = require(\"./MyActionHandler\")\nconst { handlerVersions } = require(\"./handlerVersions\")\nconst { readerConfig, handlerConfig, pollInterval, portNumber } = require(\"./config\")\n\nconst actionReader = new MyActionReader(readerConfig)\nconst actioHandler = new MyActionHandler(handlerVersions, handlerConfig)\n```\nThen, either\n```javascript\nconst watcher = new BaseActionWatcher(\n  actionReader,\n  actionHandler,\n  pollInterval,\n)\n\nwatcher.watch()\n```\nOr,\n```javascript\nconst expressWatcher = new ExpressActionWatcher(\n  actionReader,\n  actionHandler,\n  pollInterval,\n  portNumber,\n)\n\nexpressWatcher.listen()\n\n// You can then make a POST request to `/start` on your configured endpoint\n```\n\n### [**API documentation**](https://eosio.github.io/demux-js/)\n\n### [Learn from a full example](examples/eos-transfers)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EOSIO/demux-js.git"
+  },
+  "scripts": {
+    "build": "rm -rf dist/* && tsc",
+    "build-all": "rm -rf dist/* && tsc && ./scripts/build-docs.sh",
+    "build-docs": "./scripts/build-docs.sh",
+    "current-version": "echo $npm_package_version",
+    "example": "./scripts/run-example.sh",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "test": "jest --detectOpenHandles --maxWorkers=2"
+  },
+  "types": "dist/index.d.ts",
+  "version": "4.0.0"
+}

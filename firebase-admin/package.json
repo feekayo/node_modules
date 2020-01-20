@@ -1,0 +1,193 @@
+{
+  "_args": [
+    [
+      "firebase-admin",
+      "/home/fikayomi/Documents/Merchant-Api"
+    ]
+  ],
+  "_from": "firebase-admin@latest",
+  "_hasShrinkwrap": false,
+  "_id": "firebase-admin@8.6.0",
+  "_inCache": true,
+  "_installable": true,
+  "_integrity": "",
+  "_location": "/firebase-admin",
+  "_nodeVersion": "8.16.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/firebase-admin_8.6.0_1568838679473_0.36842820335224236"
+  },
+  "_npmUser": {
+    "email": "node-team-npm+wombot@google.com",
+    "name": "google-wombot"
+  },
+  "_npmVersion": "6.4.1",
+  "_phantomChildren": {
+    "streamsearch": "0.1.2"
+  },
+  "_requested": {
+    "name": "firebase-admin",
+    "raw": "firebase-admin",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/firebase-admin/-/firebase-admin-8.6.0.tgz",
+  "_shasum": "ed81d6b1a0b2b1f4033c47e33595e85634d0a68b",
+  "_shrinkwrap": null,
+  "_spec": "firebase-admin",
+  "_where": "/home/fikayomi/Documents/Merchant-Api",
+  "author": {
+    "email": "firebase-support@google.com",
+    "name": "Firebase",
+    "url": "https://firebase.google.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/firebase/firebase-admin-node/issues"
+  },
+  "dependencies": {
+    "@firebase/database": "^0.5.1",
+    "@google-cloud/firestore": "^2.0.0",
+    "@google-cloud/storage": "^3.0.2",
+    "@types/node": "^8.0.53",
+    "dicer": "^0.3.0",
+    "jsonwebtoken": "8.1.0",
+    "node-forge": "0.7.4"
+  },
+  "description": "Firebase admin SDK for Node.js",
+  "devDependencies": {
+    "@firebase/app": "^0.4.10",
+    "@firebase/auth": "^0.11.3",
+    "@types/bcrypt": "^2.0.0",
+    "@types/chai": "^3.4.34",
+    "@types/chai-as-promised": "0.0.29",
+    "@types/firebase-token-generator": "^2.0.28",
+    "@types/jsonwebtoken": "^7.2.8",
+    "@types/lodash": "^4.14.104",
+    "@types/minimist": "^1.2.0",
+    "@types/mocha": "^2.2.48",
+    "@types/nock": "^9.1.0",
+    "@types/request": "^2.47.0",
+    "@types/request-promise": "^4.1.41",
+    "@types/scrypt": "^6.0.0",
+    "@types/sinon": "^4.1.3",
+    "@types/sinon-chai": "^2.7.27",
+    "bcrypt": "^3.0.0",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "chalk": "^1.1.3",
+    "child-process-promise": "^2.2.1",
+    "del": "^2.2.1",
+    "firebase-token-generator": "^2.0.0",
+    "gulp": "^4.0.2",
+    "gulp-header": "^1.8.8",
+    "gulp-replace": "^0.5.4",
+    "gulp-typescript": "^5.0.1",
+    "http-message-parser": "^0.0.34",
+    "jsdom": "^15.0.0",
+    "lodash": "^4.17.15",
+    "minimist": "^1.2.0",
+    "mocha": "^5.2.0",
+    "mz": "^2.7.0",
+    "nock": "^9.6.0",
+    "npm-run-all": "^4.1.5",
+    "nyc": "^14.1.0",
+    "request": "^2.75.0",
+    "request-promise": "^4.1.1",
+    "run-sequence": "^1.1.5",
+    "scrypt": "^6.0.3",
+    "sinon": "^4.5.0",
+    "sinon-chai": "^2.14.0",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.17.0",
+    "typedoc": "^0.14.2",
+    "typescript": "^3.1.0",
+    "yargs": "^13.2.2"
+  },
+  "directories": {},
+  "dist": {
+    "fileCount": 44,
+    "integrity": "sha512-+JqOinU5bYUkg434LqEBXrHMrIBhL/+HwWEgbZpS1sBKHQRJK7LlcBrayqxvQKwJzgh5xs/JTInTmkozXk7h1w==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdgpQYCRA9TVsSAnZWagAAHrEP/2a0AHHn7nwmmC0Nt+xW\nAXvPlTsjiB1B18d3AAoyKRWzokW7/HYec9qhb68QlAY3Eyc61cKSnyxCvSa8\n+zE70kdaJyWCEgQuIA0QSgCEGT7wVUsjg2FheLYeiAoUJ5pXyCJKNpuCtnEx\nFH91+6GL+UlbmclOrOvjf2xLn0EKqf7N8RghxXO3aLzBckkRLON4zhfNtbbT\nzIGvPv+wJIkwUzhZwFivgFfnJ/LNB1HFjMsbVRYoU8j/aU3IekwW/EOboebP\nj1RHFIWOhFpvUsMNJXnQfXNKpMHYSydPQq+ElzTr9YYRuL8BystMcQyMhQen\nqp+Xwnmq/iFmnjA3+xTkPaHx2iiKzxXRawlC5jNLtG+l+SHTLjRsy7uXZO2o\ntR+0cmyvl/OxqNOqjwpG1vmLdADZh9r4dTH8EE0OKf7xIC0h4a1nZ5FK2egs\nR92TBwPevz1UN9RPDqle6GDDe7rEjxixmHy/ghsn3AyTYy3bS/FGTvjQCIKq\nvamNbStsx70wCsdQGHwHOg5w1AOyjVjKyXDxvZmtQu3xcBwjHn+QFkXAoeCq\ndJdWq7Yu5OroEpbw4QhjQfUKIKYK2LWDa+BoFet34XlN82VyeJi4+4SGQWO6\n1B0af1Xhrk7UODbLUV1qSBdU8UvjdZ+8H1oPJ2XUgIPEccPFQk3//c21vbA5\nWf4L\r\n=rgXL\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "ed81d6b1a0b2b1f4033c47e33595e85634d0a68b",
+    "tarball": "https://registry.npmjs.org/firebase-admin/-/firebase-admin-8.6.0.tgz",
+    "unpackedSize": 744830
+  },
+  "engines": {
+    "node": "^8.13.0 || >=10.10.0"
+  },
+  "homepage": "https://firebase.google.com/",
+  "keywords": [
+    "Firebase",
+    "admin",
+    "authentication",
+    "database",
+    "realtime"
+  ],
+  "license": "Apache-2.0",
+  "main": "lib/index.js",
+  "maintainers": [
+    {
+      "name": "chholland",
+      "email": "chholland@google.com"
+    },
+    {
+      "name": "feiyang.chen",
+      "email": "feiyang.chen1@gmail.com"
+    },
+    {
+      "name": "firebase-ops",
+      "email": "operations+plainlogo@firebase.com"
+    },
+    {
+      "name": "google-wombot",
+      "email": "node-team-npm+wombot@google.com"
+    },
+    {
+      "name": "hiranya911",
+      "email": "hiranya911@gmail.com"
+    }
+  ],
+  "name": "firebase-admin",
+  "nyc": {
+    "all": true,
+    "exclude": [
+      "**/*.d.ts"
+    ],
+    "extension": [
+      ".ts"
+    ],
+    "include": [
+      "src"
+    ]
+  },
+  "optionalDependencies": {
+    "@google-cloud/firestore": "^2.0.0",
+    "@google-cloud/storage": "^3.0.2"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/firebase/firebase-admin-node.git"
+  },
+  "scripts": {
+    "apidocs": "node docgen/generate-docs.js --api node",
+    "build": "gulp build",
+    "integration": "run-s build test:integration",
+    "lint": "run-p lint:src lint:unit lint:integration",
+    "lint:integration": "tslint -c tslint-test.json --format stylish test/integration/*.ts",
+    "lint:src": "tslint --format stylish -p tsconfig.json",
+    "lint:unit": "tslint -c tslint-test.json --format stylish test/unit/*.ts test/unit/**/*.ts",
+    "prepare": "npm run build",
+    "test": "run-s lint test:unit",
+    "test:coverage": "nyc npm run test:unit",
+    "test:integration": "mocha test/integration/*.ts --slow 5000 --timeout 20000 --require ts-node/register",
+    "test:unit": "mocha test/unit/*.spec.ts --require ts-node/register"
+  },
+  "types": "./lib/index.d.ts",
+  "version": "8.6.0"
+}

@@ -1,0 +1,95 @@
+{
+  "_args": [
+    [
+      "ntp-time-sync",
+      "/home/fikayomi/Documents/Merchant-Api"
+    ]
+  ],
+  "_from": "ntp-time-sync@latest",
+  "_id": "ntp-time-sync@0.1.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/ntp-time-sync",
+  "_nodeVersion": "8.3.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/ntp-time-sync-0.1.0.tgz_1504786857623_0.6042671236209571"
+  },
+  "_npmUser": {
+    "email": "laurens.stoetzel@gmail.com",
+    "name": "l.stoetzel"
+  },
+  "_npmVersion": "5.3.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "ntp-time-sync",
+    "raw": "ntp-time-sync",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/ntp-time-sync/-/ntp-time-sync-0.1.0.tgz",
+  "_shasum": "16a004db74f94be76ecf5c8b583af699ef6eeec4",
+  "_shrinkwrap": null,
+  "_spec": "ntp-time-sync",
+  "_where": "/home/fikayomi/Documents/Merchant-Api",
+  "author": {
+    "name": "Laurens Stötzel"
+  },
+  "bugs": {
+    "url": "https://github.com/buffcode/ntp-time-sync/issues"
+  },
+  "dependencies": {
+    "ntp-packet-parser": "^0.1.0"
+  },
+  "description": "Fetches the current time from NTP servers and returns offset information",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "prettier": "^1.6.1"
+  },
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-eIjRFWfXSvKOiDsKMyHoBK7IzU8tY1OWn75j1TW5Tg/dKTWLVEuufnhLiS1XjWfs14sTGmZVCjzTF9E1NqF4dw==",
+    "shasum": "16a004db74f94be76ecf5c8b583af699ef6eeec4",
+    "tarball": "https://registry.npmjs.org/ntp-time-sync/-/ntp-time-sync-0.1.0.tgz"
+  },
+  "gitHead": "c4c774071788a66cef0ef16fbcb905560b28466b",
+  "homepage": "https://github.com/buffcode/ntp-time-sync#readme",
+  "keywords": [
+    "clock",
+    "ntp",
+    "parser",
+    "sync",
+    "time",
+    "udp"
+  ],
+  "license": "GPL-3.0",
+  "main": "dist/index.js",
+  "maintainers": [
+    {
+      "name": "l.stoetzel",
+      "email": "laurens.stoetzel@gmail.com"
+    }
+  ],
+  "name": "ntp-time-sync",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buffcode/ntp-time-sync.git"
+  },
+  "scripts": {
+    "babel": "babel-node",
+    "build": "babel --presets babel-preset-es2015 --out-dir dist src && prettier --write dist/**/*.js",
+    "prepublishOnly": "yarn prettier:lint && yarn build",
+    "prettier": "prettier --write src/**/*.js test/**/*.js",
+    "prettier:lint": "prettier --list-different src/**/*.js"
+  },
+  "version": "0.1.0"
+}

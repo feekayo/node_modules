@@ -1,0 +1,150 @@
+{
+  "_args": [
+    [
+      "eosjs@beta",
+      "/home/fikayomi/Documents/CXT/Backend"
+    ]
+  ],
+  "_from": "eosjs@beta",
+  "_hasShrinkwrap": false,
+  "_id": "eosjs@20.0.0-beta3",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/eosjs",
+  "_nodeVersion": "10.0.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/eosjs_20.0.0-beta3_1545171478207_0.7432638235220448"
+  },
+  "_npmUser": {
+    "email": "service.npm@block.one",
+    "name": "b1serviceaccount"
+  },
+  "_npmVersion": "6.4.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "eosjs",
+    "raw": "eosjs@beta",
+    "rawSpec": "beta",
+    "scope": null,
+    "spec": "beta",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/eosjs/-/eosjs-20.0.0-beta3.tgz",
+  "_shasum": "b5a078d4627ad63343bae6897ea5952d2d4fd26d",
+  "_shrinkwrap": null,
+  "_spec": "eosjs@beta",
+  "_where": "/home/fikayomi/Documents/CXT/Backend",
+  "author": {
+    "name": "block.one"
+  },
+  "bugs": {
+    "url": "https://github.com/EOSIO/eosjs/issues"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "eosjs-ecc": "^4.0.1",
+    "text-encoding": "^0.6.4"
+  },
+  "description": "Talk to eos API",
+  "devDependencies": {
+    "@types/jest": "^23.3.1",
+    "@types/node": "^10.3.1",
+    "@types/text-encoding": "^0.0.35",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-1": "^6.24.1",
+    "jest": "^23.5.0",
+    "jest-fetch-mock": "^1.6.5",
+    "json-loader": "^0.5.7",
+    "ts-jest": "^23.1.4",
+    "ts-loader": "^4.3.1",
+    "tslint": "^5.11.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "^2.9.1",
+    "webpack": "^4.11.0",
+    "webpack-cli": "^3.0.2"
+  },
+  "directories": {},
+  "dist": {
+    "fileCount": 74,
+    "integrity": "sha512-Fr3zRFlEs1sLMGxIIsck0U4BnWlfivz8xf0Es4nT0pgWlGTiufrtmeyJvnjjspSPvyGxghZc+llcM3JI/1k9pw==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcGXIWCRA9TVsSAnZWagAAF/EQAIhVL+jsyYuEu5273jyy\n/9pU+Ep1SEybxouBqwp5VyS8LhYa9ZuXOJM33d3fF6tRrKjgaaGX/RhoX1Fr\nRz0uGZKdQzhbvq/rHtKKqS2NO2gAaUGfovT7LOpO2moYgHCUWTmI7P+z+qNo\nSRrvBpB6l2Te36MLCGFPiNP0oASYLxT4cXpVy4d0JiQrtqpyq0jXRdxwOOVs\nxhlYCjGBqskGgGnoDzz7Y238l1VMmlNGPQ+AG8rZG6w0WmDqWy7CkYv3ZP2O\nq8EK1zgj6NSkQDkgJdkMQ24o9KbHCeIRb1mNWEXf5jR+3d6pS34O53H9MZi8\nVktqDYCA/0wO/jJh8J8zIPvdxg8DZdmX0IaamQ2qWGkelmQsrClTo4txpvES\nQUJEYlEe24f//VP7QDY5NJEmxjVt4CbYjQKCCV90azK3Jrz/p5fvZeSEvlqL\nSUt6CggY16hLn5e3sZSHGaduQ3oI0ZfbQDTrYsGvB8i9bBNnQwVHl2KUzEbj\nJWBH2zF0e++KH17ByK1EoWnQCFbSKYt61T1yrknT5E9a6vah3pU3lXfUB0uJ\nzW+8nKz/7LFCYz7QMtIHJhcFec2lVdkvrX9+PFei50j+icu1P0Rq2GuTTsIE\nNNb0e6Nfx9j1/WqcAjRbTccY/NaabTjTWwIubeKeXnNilTvXMWaG/Z3yPsQI\n/ZEF\r\n=uwQJ\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "b5a078d4627ad63343bae6897ea5952d2d4fd26d",
+    "tarball": "https://registry.npmjs.org/eosjs/-/eosjs-20.0.0-beta3.tgz",
+    "unpackedSize": 564307
+  },
+  "gitHead": "be370fbcf14c2b8c1033b082df646ad01f21c33b",
+  "homepage": "https://github.com/EOSIO/eosjs#readme",
+  "jest": {
+    "automock": false,
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.json"
+      }
+    },
+    "moduleFileExtensions": [
+      "js",
+      "ts",
+      "tsx"
+    ],
+    "setupFiles": [
+      "./src/tests/setupJest.js"
+    ],
+    "testEnvironment": "node",
+    "testRegex": "(/src/.*(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "transform": {
+      "^.+\\.(tsx?)$": "ts-jest"
+    }
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "maintainers": [
+    {
+      "name": "chris-allnutt",
+      "email": "chris.allnutt@block.one"
+    },
+    {
+      "name": "jamesc",
+      "email": "slim2k@protonmail.com"
+    },
+    {
+      "name": "jeffreyssmith2nd",
+      "email": "jeffreyssmith2nd@gmail.com"
+    },
+    {
+      "name": "julienheller",
+      "email": "julien.heller@block.one"
+    },
+    {
+      "name": "smetelin",
+      "email": "serg.metelin@gmail.com"
+    }
+  ],
+  "name": "eosjs",
+  "optionalDependencies": {},
+  "readme": "⚠️ ***Important! We recently released a major breaking rewrite for eosjs. Be sure to lock your dependencies.*** ⚠️\n\nIf you are looking for the the previous version of `eosjs` you can [find it here](https://github.com/EOSIO/eosjs/tree/v16.0.9).\n\n# eosjs\n\nJavascript API for integration with EOSIO-based blockchains using [EOSIO RPC API](https://developers.eos.io/eosio-nodeos/reference).\n\nDocumentation can be found [here](https://eosio.github.io/eosjs)\n\n## Installation\n\n### NodeJS Dependency\n\n`npm install eosjs@beta` or `yarn add eosjs@beta`\n\n### Browser Distribution\n\nClone this repository locally then run `npm run build-web` or `yarn build-web`.  The browser distribution will be located in `dist-web` and can be directly copied into your project repository. The `dist-web` folder contains minified bundles ready for production, along with source mapped versions of the library for debugging.  For full browser usage examples, [see the documentation](https://eosio.github.io/eosjs/guides/1.-Browsers.html).\n\n## Import\n\n### ES Modules\n\nImporting using ES6 module syntax in the browser is supported if you have a transpiler, such as Babel.\n```js\nimport { Api, JsonRpc, RpcError } from 'eosjs';\n\nimport JsSignatureProvider from 'eosjs/dist/eosjs-jssig'; // development only\n```\n\n### CommonJS \n\nImporting using commonJS syntax is supported by NodeJS out of the box.\n```js\nconst { Api, JsonRpc, RpcError } = require('eosjs');\nconst JsSignatureProvider = require('eosjs/dist/eosjs-jssig');  // development only\nconst fetch = require('node-fetch');                            // node only; not needed in browsers\nconst { TextEncoder, TextDecoder } = require('util');           // node only; native TextEncoder/Decoder \nconst { TextEncoder, TextDecoder } = require('text-encoding');  // React Native, IE11, and Edge Browsers only\n```\n\n## Basic Usage\n\n### Signature Provider\n\nThe Signature Provider holds private keys and is responsible for signing transactions.\n\n***Using the JsSignatureProvider in the browser is not secure and should only be used for development purposes. Use a secure vault outside of the context of the webpage to ensure security when signing transactions in production***\n\n```js\nconst defaultPrivateKey = \"5JtUScZK2XEp3g9gh7F8bwtPTRAkASmNrrftmx4AxDKD5K4zDnr\"; // useraaaaaaaa\nconst signatureProvider = new JsSignatureProvider([defaultPrivateKey]);\n```\n\n### JSON-RPC\n\nOpen a connection to JSON-RPC, include `fetch` when on NodeJS.\n```js\nconst rpc = new JsonRpc('http://127.0.0.1:8888', { fetch });\n```\n\n### API\n\nInclude textDecoder and textEncoder when using in browser.\n```js\nconst api = new Api({ rpc, signatureProvider, textDecoder: new TextDecoder(), textEncoder: new TextEncoder() });\n```\n\n### Sending a transaction\n\n`transact()` is used to sign and push transactions onto the blockchain with an optional configuration object parameter.  This parameter can override the default value of `broadcast: true`, and can be used to fill TAPOS fields given `blocksBehind` and `expireSeconds`.  Given no configuration options, transactions are expected to be unpacked with TAPOS fields (`expiration`, `ref_block_num`, `ref_block_prefix`) and will automatically be broadcast onto the chain.\n\n```js\n(async () => {\n  const result = await api.transact({\n    actions: [{\n      account: 'eosio.token',\n      name: 'transfer',\n      authorization: [{\n        actor: 'useraaaaaaaa',\n        permission: 'active',\n      }],\n      data: {\n        from: 'useraaaaaaaa',\n        to: 'useraaaaaaab',\n        quantity: '0.0001 SYS',\n        memo: '',\n      },\n    }]\n  }, {\n    blocksBehind: 3,\n    expireSeconds: 30,\n  });\n  console.dir(result);\n})();\n```\n\n### Error handling\n\nuse `RpcError` for handling RPC Errors\n```js\n...\ntry {\n  const result = await api.transact({\n  ...\n} catch (e) {\n  console.log('\\nCaught exception: ' + e);\n  if (e instanceof RpcError)\n    console.log(JSON.stringify(e.json, null, 2));\n}\n...\n```\n\n## Running Tests\n\n### Automated Unit Test Suite\n`npm run test` or `yarn test`\n\n### Web Integration Test Suite\nRun `npm run build-web` to build the browser distrubution then open `src/tests/web.html` in the browser of your choice.  The file should run through 6 tests, relaying the results onto the webpage with a 2 second delay after each test.  The final 2 tests should relay the exceptions being thrown onto the webpage for an invalid transaction and invalid rpc call.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EOSIO/eosjs.git"
+  },
+  "scripts": {
+    "build": "tsc -p ./tsconfig.json && cp src/ripemd.es5.js dist/ripemd.js",
+    "build-web": "webpack --config webpack.prod.js && webpack --config webpack.debug.js",
+    "clean": "rm -rf dist",
+    "docs-build": "sh .docs/scripts/build.sh",
+    "docs-init": "sh .docs/scripts/init.sh",
+    "docs-publish": "sh .docs/scripts/publish.sh",
+    "docs-serve": "python -m SimpleHTTPServer",
+    "lint": "tslint -c tslint.json src/**/*.ts",
+    "lint-fix": "tslint -c tslint.json src/**/*.ts --fix",
+    "prepare": "npm run build",
+    "test": "jest"
+  },
+  "version": "20.0.0-beta3"
+}

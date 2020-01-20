@@ -1,0 +1,77 @@
+{
+  "_args": [
+    [
+      "nonce-generator",
+      "/home/fikayomi/Documents/Merchant-Api"
+    ]
+  ],
+  "_from": "nonce-generator@latest",
+  "_id": "nonce-generator@1.0.2",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/nonce-generator",
+  "_nodeVersion": "6.4.0",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/nonce-generator-1.0.2.tgz_1475190780982_0.16136442823335528"
+  },
+  "_npmUser": {
+    "email": "pream@preamtotaram.com",
+    "name": "ptotaram"
+  },
+  "_npmVersion": "3.10.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "nonce-generator",
+    "raw": "nonce-generator",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nonce-generator/-/nonce-generator-1.0.2.tgz",
+  "_shasum": "2d039dd9946dca6651a8db054c8f6dab134bd37d",
+  "_shrinkwrap": null,
+  "_spec": "nonce-generator",
+  "_where": "/home/fikayomi/Documents/Merchant-Api",
+  "author": {
+    "email": "pream@preamtotaram.com",
+    "name": "Pream Totaram"
+  },
+  "dependencies": {},
+  "description": "Synchronusly generate nonce tokens",
+  "devDependencies": {
+    "unit.js": "^2.0.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "2d039dd9946dca6651a8db054c8f6dab134bd37d",
+    "tarball": "https://registry.npmjs.org/nonce-generator/-/nonce-generator-1.0.2.tgz"
+  },
+  "gitHead": "5eb5bcd232279d7992e6389106d35e6fa3562679",
+  "keywords": [
+    "nonce"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "ptotaram",
+      "email": "pream@preamtotaram.com"
+    }
+  ],
+  "name": "nonce-generator",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ptotaram/nonce-generator/"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "version": "1.0.2"
+}

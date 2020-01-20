@@ -1,0 +1,101 @@
+{
+  "_args": [
+    [
+      "@firebase/database-types@0.4.4",
+      "/home/fikayomi/Documents/Merchant-Api/node_modules/@firebase/database"
+    ]
+  ],
+  "_from": "@firebase/database-types@0.4.4",
+  "_hasShrinkwrap": false,
+  "_id": "@firebase/database-types@0.4.4",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/@firebase/database-types",
+  "_nodeVersion": "8.16.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/database-types_0.4.4_1569445525482_0.049313236041525155"
+  },
+  "_npmUser": {
+    "email": "feiyang.chen1@gmail.com",
+    "name": "feiyang.chen"
+  },
+  "_npmVersion": "6.4.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "@firebase/database-types",
+    "raw": "@firebase/database-types@0.4.4",
+    "rawSpec": "0.4.4",
+    "scope": "@firebase",
+    "spec": "0.4.4",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "/@firebase/database"
+  ],
+  "_resolved": "https://registry.npmjs.org/@firebase/database-types/-/database-types-0.4.4.tgz",
+  "_shasum": "d2337413a5d88b326c199cb3008a5fccc9626001",
+  "_shrinkwrap": null,
+  "_spec": "@firebase/database-types@0.4.4",
+  "_where": "/home/fikayomi/Documents/Merchant-Api/node_modules/@firebase/database",
+  "author": {
+    "email": "firebase-support@google.com",
+    "name": "Firebase",
+    "url": "https://firebase.google.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/firebase/firebase-js-sdk/issues"
+  },
+  "dependencies": {
+    "@firebase/app-types": "0.4.4"
+  },
+  "description": "@firebase/database Types",
+  "devDependencies": {
+    "typescript": "3.5.3"
+  },
+  "directories": {},
+  "dist": {
+    "fileCount": 3,
+    "integrity": "sha512-n+CKrqfxKII6VMl44HFCPIB8xS78isRiA2V6SYJe4Mo6vauKggRBm8Tdt1SKmBco5zHhhYkhaYzU7bfPYm54Ag==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdi9aWCRA9TVsSAnZWagAAq7oP/0ExwgOi222vf+gckKzS\nHECcTjFlGloIM0DCgnvYxNi1uymQxYfzSrtJmU4qbqRz08z72/IrX4k+0nx5\nIwdROH1tl7iQtWIIz+w6eoyqf6VjFj3TGKMQlOD+OVg45afVXJXsAmPgjJxA\n1dl++eoaErWQnfThoZEmz1AKsNEHDAqwZom3mkeIZP8FuBl+HYh+Z9E/t7KM\ntNuyZ17UrSHp/V4QrxnUTscM/pPSZSZTM9XKd4B+4Fqbsl0lecil9Qp965Az\nQ2gi63m+1FAaBSMEDTYnKE7mbWXwhmXK9He55hLpKB2l7OfJrXEo2KZ1Viu8\nLXuscgIPkxTPLpP9eA0U4RevgIEVMONPVPwcoPGcgAWh7lFpJ/ImdxX143RF\nqsjGwMcUUBX42zPUwOgaI+PqVMsy+rObJ+Izdm/Pj3TdSx9C3MZurgRycz9m\ngNlJmGcYBrIKM47kkSRhrN99P9kdjONP6RGIAgXpeynyJaPiFxKLK33EFSUR\nKEejPTho/QYJXfbk9c+usw37TnFBmgaexpHkcrLyy15MkeyJHDcA7P4ddLPw\nAucJnyV4sySVjTULarEG2yx+7kt51VcDOUp6sCi52j+fACelj2V7Qx9TVfya\nBU20OzNsHWjy1a5KPBBfVAjUlh0zVQWf/PGgHV+EbM9QmrRMj4RN09SOCbGH\nN1ga\r\n=/P6S\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "d2337413a5d88b326c199cb3008a5fccc9626001",
+    "tarball": "https://registry.npmjs.org/@firebase/database-types/-/database-types-0.4.4.tgz",
+    "unpackedSize": 4922
+  },
+  "homepage": "https://github.com/firebase/firebase-js-sdk#readme",
+  "license": "Apache-2.0",
+  "maintainers": [
+    {
+      "name": "chholland",
+      "email": "chholland@google.com"
+    },
+    {
+      "name": "feiyang.chen",
+      "email": "feiyang.chen1@gmail.com"
+    },
+    {
+      "name": "firebase-ops",
+      "email": "operations+plainlogo@firebase.com"
+    },
+    {
+      "name": "google-wombot",
+      "email": "node-team-npm+wombot@google.com"
+    },
+    {
+      "name": "hiranya911",
+      "email": "hiranya911@gmail.com"
+    }
+  ],
+  "name": "@firebase/database-types",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "directory": "packages/database-types",
+    "type": "git",
+    "url": "git+https://github.com/firebase/firebase-js-sdk.git"
+  },
+  "scripts": {
+    "test": "tsc"
+  },
+  "version": "0.4.4"
+}

@@ -1,0 +1,114 @@
+{
+  "_args": [
+    [
+      "telesignsdk@^2.2.1",
+      "/home/fikayomi/Documents/Merchant-Api"
+    ]
+  ],
+  "_from": "telesignsdk@>=2.2.1 <3.0.0",
+  "_hasShrinkwrap": false,
+  "_id": "telesignsdk@2.2.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/telesignsdk",
+  "_nodeVersion": "6.14.2",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/telesignsdk_2.2.1_1554939768961_0.9034978184231397"
+  },
+  "_npmUser": {
+    "email": "sdk@telesign.com",
+    "name": "npm-telesign"
+  },
+  "_npmVersion": "3.10.10",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "telesignsdk",
+    "raw": "telesignsdk@^2.2.1",
+    "rawSpec": "^2.2.1",
+    "scope": null,
+    "spec": ">=2.2.1 <3.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/telesignsdk/-/telesignsdk-2.2.1.tgz",
+  "_shasum": "f9ef7a3dc77df0367619f34ce4660dde9c600f6c",
+  "_shrinkwrap": null,
+  "_spec": "telesignsdk@^2.2.1",
+  "_where": "/home/fikayomi/Documents/Merchant-Api",
+  "author": {
+    "name": "TeleSign Corp."
+  },
+  "bugs": {
+    "url": "https://github.com/TeleSign/node_telesign/issues"
+  },
+  "dependencies": {
+    "os": "0.1.1",
+    "querystring": "0.2.0",
+    "request": "^2.88.0",
+    "urijs": "1.18.10",
+    "uuid-v4.js": "1.0.2"
+  },
+  "description": "Official TeleSign SDK for Rest APIs including Messaging (SMS), Score, PhoneID, Voice, and AppVerify",
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "proxyquire": "^1.8.0",
+    "sinon": "^3.0.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.7.0"
+  },
+  "directories": {},
+  "dist": {
+    "fileCount": 15,
+    "integrity": "sha512-wyWuj+VQgdLePYg1OSHKVhtJiqHlRWaz0q2cYsx2N4zPtxf4WoduUOZq4cUgXS6oD/+Ez+HGoVahQFwyx3dPmg==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcrn95CRA9TVsSAnZWagAAL98P/RnK5qBtSAMZh50ylvRD\nAUW6VEX1EWZrA4AncfxszuKA6obELgVln62oGmyRnWekZ0muXQD6StYR8pC1\n8W0QlGE1izFXZBhJBAa59Y8fFvpCV0/deK4J/xFxf4Oh9ihwuDn6FGFzTI9z\niQ6O0eaUYJykDMLpM0Qbr07B1XUqU+05gqn0Dklj32EKNPQ5VDnrBy9IeFhH\n+tsauVjhdV92bkMP96zLJD9GuCi09Bv9hUysgV7kZkwN0qvfjnWG/Bp4Lc9i\nb659YRq7qXnr9oXUj+x0yjDA4EeZvjyhrp1dRw6h84WkwbYa+NaKSq5t4726\nTOK3iu6KsxTpHe7In2odMXPAxjRxMQ0Q0h4qpcN9YNFhqV0eJBOWz1yiwabE\nLdxaXPV27cwIA4QKpiS74ErJe5JdVJFmyyfE5boPucRUneOQ3A895OI2+X/S\nCmx6wNekptdUp9wdIn1J6OVnMMbWtnyt1qLZKe4qomsIP/AdhCP9fz5hsn3o\njsEO64aW3QWIaDXgTtAM24Ixo3JxiNty8+T3Qi4stAKsNQyI04rC6c92naWU\nklflfi2NmpRZDsd3ec2zgg042+vvRntGk5fNbCSxzv0hbApjZnYBnJbCUcei\nj7zbLUXPHTpEU405pmBpPDjR1S1FmThXKJPfTjqJ7fruKhgzXNWMwYoGNj1c\nBJng\r\n=CGn4\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "f9ef7a3dc77df0367619f34ce4660dde9c600f6c",
+    "tarball": "https://registry.npmjs.org/telesignsdk/-/telesignsdk-2.2.1.tgz",
+    "unpackedSize": 96320
+  },
+  "email": "sdk@telesign.com",
+  "gitHead": "70fc95816699e8744cfa1e2452d4a7e0d5838d7f",
+  "homepage": "https://github.com/TeleSign/node_telesign#readme",
+  "keywords": [
+    "2FA",
+    "2factor",
+    "AppVerify",
+    "Nexmo",
+    "Telesign",
+    "Twilio",
+    "authenticate",
+    "authentication",
+    "call",
+    "phone",
+    "sms",
+    "text",
+    "twofactor",
+    "voice"
+  ],
+  "license": "MIT",
+  "main": "src/TeleSign.js",
+  "maintainers": [
+    {
+      "name": "npm-telesign",
+      "email": "sdk@telesign.com"
+    },
+    {
+      "name": "pjain-telesign",
+      "email": "pjain@telesign.com"
+    }
+  ],
+  "name": "telesignsdk",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TeleSign/node_telesign.git"
+  },
+  "scripts": {
+    "coverage": "istanbul cover ./test/*.js",
+    "test": "node ./test/testClients.js | tap-spec"
+  },
+  "version": "2.2.1"
+}

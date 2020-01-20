@@ -1,0 +1,76 @@
+{
+  "_args": [
+    [
+      "hmacsha1",
+      "/home/fikayomi/Documents/Merchant-Api"
+    ]
+  ],
+  "_from": "hmacsha1@latest",
+  "_id": "hmacsha1@1.0.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/hmacsha1",
+  "_nodeVersion": "0.10.32",
+  "_npmUser": {
+    "email": "ph.minamo@cytisan.com",
+    "name": "minamo"
+  },
+  "_npmVersion": "2.2.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "hmacsha1",
+    "raw": "hmacsha1",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/hmacsha1/-/hmacsha1-1.0.0.tgz",
+  "_shasum": "c1b7ae03a4ea116348090af14f8148c12938a917",
+  "_shrinkwrap": null,
+  "_spec": "hmacsha1",
+  "_where": "/home/fikayomi/Documents/Merchant-Api",
+  "author": {
+    "name": "pH200"
+  },
+  "bugs": {
+    "url": "https://github.com/pH-minamo/hmacsha1-js/issues"
+  },
+  "dependencies": {},
+  "description": "Simple HMAC-SHA1 for JavaScript. The code was extracted directly from Chromium examples for extensions.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "c1b7ae03a4ea116348090af14f8148c12938a917",
+    "tarball": "https://registry.npmjs.org/hmacsha1/-/hmacsha1-1.0.0.tgz"
+  },
+  "gitHead": "2cd6fcda9bea9edee14bd8c97ddfd121788b7f64",
+  "homepage": "https://github.com/pH-minamo/hmacsha1-js",
+  "keywords": [
+    "crypto",
+    "hmac_sha1",
+    "hmacsha1",
+    "oauth",
+    "sha1"
+  ],
+  "license": "BSD",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "minamo",
+      "email": "ph.minamo@cytisan.com"
+    }
+  ],
+  "name": "hmacsha1",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pH-minamo/hmacsha1-js.git"
+  },
+  "scripts": {},
+  "version": "1.0.0"
+}

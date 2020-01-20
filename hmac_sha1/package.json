@@ -1,0 +1,92 @@
+{
+  "_args": [
+    [
+      "hmac_sha1",
+      "/home/fikayomi/Documents/Merchant-Api"
+    ]
+  ],
+  "_from": "hmac_sha1@latest",
+  "_hasShrinkwrap": false,
+  "_id": "hmac_sha1@0.1.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/hmac_sha1",
+  "_nodeVersion": "10.6.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/hmac_sha1_0.1.1_1545218748411_0.5024418258405448"
+  },
+  "_npmUser": {
+    "email": "canidomath@yahoo.com",
+    "name": "gits2501"
+  },
+  "_npmVersion": "6.1.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "hmac_sha1",
+    "raw": "hmac_sha1",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/hmac_sha1/-/hmac_sha1-0.1.1.tgz",
+  "_shasum": "af11f654f1d1b1f30d2282c456be311241d91323",
+  "_shrinkwrap": null,
+  "_spec": "hmac_sha1",
+  "_where": "/home/fikayomi/Documents/Merchant-Api",
+  "author": {
+    "email": "telhurat@hotmail.com",
+    "name": "gits2501",
+    "url": "https://github.com/gits2501"
+  },
+  "bugs": {
+    "url": "https://github.com/gits2501/Hmac_Sha1/issues"
+  },
+  "dependencies": {},
+  "description": "Implementation of HMAC algorithm in javascript with plain javascript strings, using SHA1 as underline hash functon.",
+  "devDependencies": {
+    "tap": "*"
+  },
+  "directories": {},
+  "dist": {
+    "fileCount": 7,
+    "integrity": "sha512-YqoagHdgs/a3NvFg2Xh3g4LpvTJC2uvo3OuITP7KAsMa4HHwlUw+R9NDg6OSgw2BC3zUMjvZAUoJgGgK6EuJLw==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcGiq9CRA9TVsSAnZWagAAJQ8P/RTKeXQgKueUOe9CBhYk\nL3J7E0KYKsayhwFPz0K68iHMW0wDplS3xysS4NZwQUqINV0YDz5LcgFI8D+A\nusJ/v5rGv4v/YazoT6v3PL/wOW3kAtum2j8kGzz5XLLgUnmG5SrBi59SzYnb\ndnC18UgCfzDRgEdJ0If805kENxepwhbJrwdMtpUUcvJz3jfvSYw5askwV5+G\nOq/NMD9PZUow+c70u0lORNMSN762//jZY+vZaIRbIq1I7w260vlTaB4ibEWj\nbG3EU5H6EkIVhadsdV2F4PkwIiWSWclROqLiGRYzcnhRfY0F2+6G0FBR9nSU\nbWbHdoE+9a8EQq8zgfu5OQLt4k/xk4klfXSiaIIfCFsxiSkErYQuz6abYDjS\njX+F+pGqrXlJgqLHt5RmjEkEC66JptUBtn901ThBDIYEOxPvVa/kMfw3rAva\nAJjfJ9xwhOaTVmfgRK+GbAkMBodrMhgIY30IzGUwSppngX7yB8MRrI+tuEx7\nS2ap3IC6kbbRaqQVjiwwn65nsYTyYQ0zmWhNOXFOqyr27HYhBDvrJYeVVily\neu+1wgbKsEqvUvmCnYIvG0MqzLZhTznq/ahu+RYYd/qoqhcBuUQR5ucOz/hM\nmDE7ETQ/NDGxQY+EdncRZrBJf+EcUbYcEHcmILawyXrwtohjdK53jcGIrm5H\nBosV\r\n=N/Y4\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "af11f654f1d1b1f30d2282c456be311241d91323",
+    "tarball": "https://registry.npmjs.org/hmac_sha1/-/hmac_sha1-0.1.1.tgz",
+    "unpackedSize": 44740
+  },
+  "engines": {
+    "node": "*"
+  },
+  "gitHead": "04b9b11efa9080c2502961b6aab817a1cf2e146e",
+  "homepage": "https://github.com/gits2501/Hmac_Sha1#readme",
+  "keywords": [
+    "HMAC",
+    "authentication",
+    "signature"
+  ],
+  "license": "MIT",
+  "main": "hmacSha1.js",
+  "maintainers": [
+    {
+      "name": "gits2501",
+      "email": "canidomath@yahoo.com"
+    }
+  ],
+  "name": "hmac_sha1",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gits2501/Hmac_Sha1.git"
+  },
+  "scripts": {
+    "test": "node ./test/test.js"
+  },
+  "version": "0.1.1"
+}
